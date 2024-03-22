@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinanceManager", "PersonalFinanceManager\PersonalFinanceManager.csproj", "{C0FCA2B8-4B21-4C58-8727-2A7944D61334}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{07968AA4-4DB1-4E71-88B0-AD23F94727C4}"
+	ProjectSection(SolutionItems) = preProject
+		(1) housewife.sql = (1) housewife.sql
+		(2) housewife_triggers.sql = (2) housewife_triggers.sql
+		(3) housewife_proc.sql = (3) housewife_proc.sql
+		(4) housewife_data.sql = (4) housewife_data.sql
+		(5) ssms_user.sql = (5) ssms_user.sql
+		database_setup.bat = database_setup.bat
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinanceManager.Services", "PersonalFinanceManager.Services\PersonalFinanceManager.Services.csproj", "{7C8318E0-87E0-412D-99E2-E04BB392A946}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinanceManager.Dtos", "PersonalFinanceManager.Dtos\PersonalFinanceManager.Dtos.csproj", "{BF788670-9DEB-4C04-AA2F-6DB088177B05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinanceManager.Query", "PersonalFinanceManager.Query\PersonalFinanceManager.Query.csproj", "{7542529E-804C-422F-95AE-32434004BD17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinanceManager.ConsoleApp", "PersonalFinanceManager.ConsoleApp\PersonalFinanceManager.ConsoleApp.csproj", "{E1CB4C78-F333-4822-BBE0-B276572385BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0FCA2B8-4B21-4C58-8727-2A7944D61334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0FCA2B8-4B21-4C58-8727-2A7944D61334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0FCA2B8-4B21-4C58-8727-2A7944D61334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0FCA2B8-4B21-4C58-8727-2A7944D61334}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C8318E0-87E0-412D-99E2-E04BB392A946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C8318E0-87E0-412D-99E2-E04BB392A946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C8318E0-87E0-412D-99E2-E04BB392A946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C8318E0-87E0-412D-99E2-E04BB392A946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF788670-9DEB-4C04-AA2F-6DB088177B05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF788670-9DEB-4C04-AA2F-6DB088177B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF788670-9DEB-4C04-AA2F-6DB088177B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF788670-9DEB-4C04-AA2F-6DB088177B05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7542529E-804C-422F-95AE-32434004BD17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7542529E-804C-422F-95AE-32434004BD17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7542529E-804C-422F-95AE-32434004BD17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7542529E-804C-422F-95AE-32434004BD17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1CB4C78-F333-4822-BBE0-B276572385BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1CB4C78-F333-4822-BBE0-B276572385BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1CB4C78-F333-4822-BBE0-B276572385BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1CB4C78-F333-4822-BBE0-B276572385BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61D83988-A43F-4717-B19A-C6C4D1E07964}
+	EndGlobalSection
+EndGlobal

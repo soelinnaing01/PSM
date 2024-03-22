@@ -1,38 +1,38 @@
 USE housewife;
 
-insert into descriptions(description) values('salary');
-insert into descriptions(description) VALUES('poor money');
-insert into descriptions(description) VALUES('OverTime');
-insert into descriptions(description) VALUES('annuity');
-insert into descriptions(description) VALUES('allowance');
-insert into descriptions(description) VALUES('bonus');
-insert into descriptions(description) VALUES('Part Time Job');
-insert into descriptions(description) VALUES('accomplishment');
-insert into descriptions(description) values('Earn Money');
-insert into descriptions(description) values('ကြက်သွန်နီဝယ်');
-insert into descriptions(description) values('မီတာခ');
-insert into descriptions(description) values('ရေခွန်');
-insert into descriptions(description) values('အိမ်လခ');
-insert into descriptions(description) values('အဝတ်အစားဝယ်');
-insert into descriptions(description) values('ဆန်ဝယ်');
-insert into descriptions(description) values('မုန့်ဝယ်');
-insert into descriptions(description) values('ဆီဝယ်');
+insert into descriptions(description) values(N'salary');
+insert into descriptions(description) VALUES(N'poor money');
+insert into descriptions(description) VALUES(N'OverTime');
+insert into descriptions(description) VALUES(N'annuity');
+insert into descriptions(description) VALUES(N'allowance');
+insert into descriptions(description) VALUES(N'bonus');
+insert into descriptions(description) VALUES(N'Part Time Job');
+insert into descriptions(description) VALUES(N'accomplishment');
+insert into descriptions(description) values(N'Earn Money');
+insert into descriptions(description) values(N'ကြက်သွန်နီဝယ်');
+insert into descriptions(description) values(N'မီတာခ');
+insert into descriptions(description) values(N'ရေခွန်');
+insert into descriptions(description) values(N'အိမ်လခ');
+insert into descriptions(description) values(N'အဝတ်အစားဝယ်');
+insert into descriptions(description) values(N'ဆန်ဝယ်');
+insert into descriptions(description) values(N'မုန့်ဝယ်');
+insert into descriptions(description) values(N'ဆီဝယ်');
 
 insert into cash_flow(text) values('cash');
 insert into cash_flow(text) values('wave pay');
 insert into cash_flow(text) values('K pay');
 insert into cash_flow(text) values('Banking');
 
-insert into from_to_flow(text) values('MyJob');
-insert into from_to_flow(text) values('Gallary company');
-insert into from_to_flow(text) values('WeShare SoftwareHouse');
-insert into from_to_flow(text) values('Facebook Page');
-insert into from_to_flow(text) values('Youtube');
-insert into from_to_flow(text) values('KhinWintWah');
-insert into from_to_flow(text) values('My Mother');
-insert into from_to_flow(text) values('ဖြိုးကုန်စုံဆိုင်');
-insert into from_to_flow(text) values('မိုး ကုန်စုံဆိုင်');
-insert into from_to_flow(text) values('Apple Store');
+insert into from_to_flow(text) values(N'MyJob');
+insert into from_to_flow(text) values(N'Gallary company');
+insert into from_to_flow(text) values(N'WeShare SoftwareHouse');
+insert into from_to_flow(text) values(N'Facebook Page');
+insert into from_to_flow(text) values(N'Youtube');
+insert into from_to_flow(text) values(N'KhinWintWah');
+insert into from_to_flow(text) values(N'My Mother');
+insert into from_to_flow(text) values(N'ဖြိုးကုန်စုံဆိုင်');
+insert into from_to_flow(text) values(N'မိုး ကုန်စုံဆိုင်');
+insert into from_to_flow(text) values(N'Apple Store');
 
 INSERT INTO incomes (description_id,from_to_flow_id,user_id,amount,cash_flow_id,date) 
 VALUES (1,1,1,500000,1,'2019-01-05');

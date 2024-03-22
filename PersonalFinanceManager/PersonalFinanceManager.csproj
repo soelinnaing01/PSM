@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C0FCA2B8-4B21-4C58-8727-2A7944D61334}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PersonalFinanceManager</RootNamespace>
+    <AssemblyName>PersonalFinanceManager</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alert.cs" />
+    <Compile Include="frm_addnewdata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_addnewdata.Designer.cs">
+      <DependentUpon>frm_addnewdata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_budget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_budget.Designer.cs">
+      <DependentUpon>frm_budget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_expense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_expense.Designer.cs">
+      <DependentUpon>frm_expense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_income.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_income.Designer.cs">
+      <DependentUpon>frm_income.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_login.Designer.cs">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_home.Designer.cs">
+      <DependentUpon>frm_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_saving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_saving.Designer.cs">
+      <DependentUpon>frm_saving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="keycontrol.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DB.cs" />
+    <Compile Include="reporting.cs" />
+    <Compile Include="validate.cs" />
+    <EmbeddedResource Include="frm_addnewdata.resx">
+      <DependentUpon>frm_addnewdata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_budget.resx">
+      <DependentUpon>frm_budget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_expense.resx">
+      <DependentUpon>frm_expense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_income.resx">
+      <DependentUpon>frm_income.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login.resx">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_home.resx">
+      <DependentUpon>frm_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_saving.resx">
+      <DependentUpon>frm_saving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5096160.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\income.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expense.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refresh-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-fund-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-saving-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PersonalFinanceManager.Dtos\PersonalFinanceManager.Dtos.csproj">
+      <Project>{bf788670-9deb-4c04-aa2f-6db088177b05}</Project>
+      <Name>PersonalFinanceManager.Dtos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PersonalFinanceManager.Query\PersonalFinanceManager.Query.csproj">
+      <Project>{7542529e-804c-422f-95ae-32434004bd17}</Project>
+      <Name>PersonalFinanceManager.Query</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PersonalFinanceManager.Services\PersonalFinanceManager.Services.csproj">
+      <Project>{7c8318e0-87e0-412d-99e2-e04bb392a946}</Project>
+      <Name>PersonalFinanceManager.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

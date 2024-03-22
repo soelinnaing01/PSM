@@ -19,6 +19,7 @@ CREATE TABLE users(
 
 insert into users(name,username,password) values('SoeLin','soelin',HASHBYTES('sha2_256','admin'));
 insert into users(name,username,password) values('Tin Tin Swe','tintin',HASHBYTES('sha2_256','tintin'));
+insert into users(name,username,password) values('Sann Lynn Htun','ace',HASHBYTES('sha2_256','ace'));
 
 CREATE TABLE descriptions(
 	id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
